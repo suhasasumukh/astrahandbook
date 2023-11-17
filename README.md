@@ -3,6 +3,11 @@
 <p id="description">The essential guide for young builders to get started in building startups or their first project.</p>
 <hr>
 
+<h2>⚒️ Handbook:</h2>
+
+- [Access our Handbook here](sparkhandbook.vercel.app)
+<hr>
+
 <h2>🤝 Benefits</h2>
 
 *   Community-Made Learning Resources
