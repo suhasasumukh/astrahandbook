@@ -3,7 +3,7 @@
 <p id="description">The essential guide for young builders to get started in building startups or their first project.</p>
 <hr>
 
-<h2🤝 Benefits</h2>
+<h2>🤝 Benefits</h2>
 
 *   Community-Made Learning Resources
 *   Product Building Support
