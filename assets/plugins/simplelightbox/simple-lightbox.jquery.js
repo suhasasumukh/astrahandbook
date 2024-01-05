@@ -1,9 +1,3 @@
-/*!
-	By André Rinas, www.andrerinas.de
-	Documentation, www.simplelightbox.de
-	Available for use under the MIT License
-	Version 2.10.3
-*/
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 "use strict";
 
@@ -297,8 +291,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
   _createClass(SimpleLightbox, [{
     key: "checkPassiveEventsSupport",
     value: function checkPassiveEventsSupport() {
-      // https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md#feature-detection
-      // Test via a getter in the options object to see if the passive property is accessed
       var supportsPassive = false;
 
       try {
@@ -467,7 +459,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
       });
       this.currentImage = null;
       this.isOpen = false;
-      this.isAnimating = false; // reset touchcontrol coordinates
+      this.isAnimating = false;
 
       for (var key in this.controlCoordinates) {
         this.controlCoordinates[key] = 0;
@@ -499,7 +491,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
         var src = event.target.getAttribute('src');
 
         if (_this3.loadedImages.indexOf(src) === -1) {
-          //is this condition even required... setting multiple times will not change usage...
           _this3.loadedImages.push(src);
         }
 
@@ -609,7 +600,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
           _this5.relatedElements[_this5.currentImageIndex].dispatchEvent(new Event('changed.' + _this5.eventNamespace));
 
           _this5.relatedElements[_this5.currentImageIndex].dispatchEvent(new Event((direction === 1 ? 'nextDone' : 'prevDone') + '.' + _this5.eventNamespace));
-        } // history
+        }
 
 
         if (_this5.options.history) {
@@ -883,7 +874,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
           _this6.controlCoordinates.containerOffsetY = _this6.domNodes.image.offsetTop;
 
           if (_this6.controlCoordinates.touchCount === 1)
-            /* Single touch */
             {
               if (!_this6.controlCoordinates.doubleTapped) {
                 _this6.controlCoordinates.doubleTapped = true;
@@ -969,7 +959,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
           _this6.controlCoordinates.touchmoveCount++;
 
           if (_this6.controlCoordinates.touchCount > 1)
-            /* Pinch */
             {
               _this6.controlCoordinates.pointerOffsetX2 = event.touches[1].clientX;
               _this6.controlCoordinates.pointerOffsetY2 = event.touches[1].clientY;
@@ -980,7 +969,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
               }
 
               if (Math.abs(_this6.controlCoordinates.initialPinchDistance - _this6.controlCoordinates.targetPinchDistance) >= 1) {
-                /* Initialize helpers */
                 _this6.controlCoordinates.targetScale = _this6.minMax(_this6.controlCoordinates.targetPinchDistance / _this6.controlCoordinates.initialPinchDistance * _this6.controlCoordinates.initialScale, 1, _this6.options.maxZoom);
                 _this6.controlCoordinates.limitOffsetX = (_this6.controlCoordinates.imgWidth * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerWidth) / 2;
                 _this6.controlCoordinates.limitOffsetY = (_this6.controlCoordinates.imgHeight * _this6.controlCoordinates.targetScale - _this6.controlCoordinates.containerHeight) / 2;
@@ -1025,7 +1013,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
             _this6.zoomPanElement(_this6.controlCoordinates.targetOffsetX + "px", _this6.controlCoordinates.targetOffsetY + "px", _this6.controlCoordinates.targetScale);
           }
         }
-        /* Mouse Move implementation */
 
 
         if (event.type === 'mousemove' && _this6.controlCoordinates.mousedown) {
