@@ -792,13 +792,10 @@ var SimpleLightbox = /*#__PURE__*/function () {
           var delta = event.delta || event.wheelDelta;
 
           if (delta === undefined) {
-            //we are on firefox
             delta = event.detail;
           }
 
-          delta = Math.max(-1, Math.min(1, delta)); // cap the delta to [-1,1] for cross browser consistency
-          // apply zoom
-
+          delta = Math.max(-1, Math.min(1, delta));
           scale += delta * _this6.options.scrollZoomFactor * scale;
           scale = Math.max(1, Math.min(_this6.options.maxZoom, scale));
           _this6.controlCoordinates.targetScale = scale;
@@ -1076,12 +1073,10 @@ var SimpleLightbox = /*#__PURE__*/function () {
               _this6.controlCoordinates.initialPinchDistance = null;
               _this6.controlCoordinates.capture = false;
             } else if (_this6.controlCoordinates.touchCount === 1)
-            /* Single touch */
             {
               _this6.controlCoordinates.initialPointerOffsetX = event.touches[0].clientX;
               _this6.controlCoordinates.initialPointerOffsetY = event.touches[0].clientY;
             } else if (_this6.controlCoordinates.touchCount > 1)
-            /* Pinch */
             {
               _this6.controlCoordinates.initialPinchDistance = null;
             }
@@ -1191,7 +1186,6 @@ var SimpleLightbox = /*#__PURE__*/function () {
       if (this.pushStateSupport) {
         window.history[this.historyHasChanges ? 'replaceState' : 'pushState']('', document.title, newURL);
       } else {
-        // what is the browser target of this?
         if (this.historyHasChanges) {
           window.location.replace(newURL);
         } else {
@@ -1218,8 +1212,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
         } else {
           window.location.hash = '';
         }
-      } //
-      //in case an history operation is still pending
+      }
 
 
       clearTimeout(this.historyUpdateTimeout);
@@ -1230,7 +1223,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
       clearTimeout(this.historyUpdateTimeout);
 
       if (!this.historyHasChanges) {
-        this.updateHash(); // first time
+        this.updateHash();
       } else {
         this.historyUpdateTimeout = setTimeout(this.updateHash.bind(this), 800);
       }
@@ -1350,7 +1343,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
           _this9.domNodes.wrapper.focus();
         }
       });
-    } // utility
+    } 
 
   }, {
     key: "addEventListener",
@@ -1723,7 +1716,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
     key: "prev",
     value: function prev() {
       this.loadImage(-1);
-    } // get some useful data
+    }
 
   }, {
     key: "getLighboxData",
@@ -1733,12 +1726,11 @@ var SimpleLightbox = /*#__PURE__*/function () {
         currentImage: this.currentImage,
         globalScrollbarWidth: this.globalScrollbarWidth
       };
-    } //close is exposed anyways..
+    }
 
   }, {
     key: "destroy",
     value: function destroy() {
-      //remove all custom event listeners from elements
       this.off(['close.' + this.eventNamespace, 'closed.' + this.eventNamespace, 'nextImageLoaded.' + this.eventNamespace, 'prevImageLoaded.' + this.eventNamespace, 'change.' + this.eventNamespace, 'nextDone.' + this.eventNamespace, 'prevDone.' + this.eventNamespace, 'error.' + this.eventNamespace, 'changed.' + this.eventNamespace, 'next.' + this.eventNamespace, 'prev.' + this.eventNamespace, 'show.' + this.eventNamespace, 'shown.' + this.eventNamespace]);
       this.removeEventListener(this.elements, 'click.' + this.eventNamespace);
       this.removeEventListener(document, 'focusin.' + this.eventNamespace);
