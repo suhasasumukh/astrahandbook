@@ -1,9 +1,3 @@
-/*!
-	By André Rinas, www.andrerinas.de
-	Documentation, www.simplelightbox.de
-	Available for use under the MIT License
-	Version 2.10.3
-*/
 class SimpleLightbox {
 
     defaultOptions = {
