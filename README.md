@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Spark Handbook ⚡</h1>
 
-<p id="description">The essential guide for young builders to get started in building startups or their first project.</p>
+<p id="description">The ultimate guide for Young Builders to get started with building their first project for Hackathons.</p>
 <hr>
 
 <h2>⚒️ Handbook:</h2>
