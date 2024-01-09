@@ -18,7 +18,7 @@
 
 <h2>🍰 Contribution Guidelines:</h2>
 
-- Share Ideas: Drop your thoughts on Discord and we'll handle the rest.
+- Share Ideas: Drop your thoughts on [Discord](https://discord.com/invite/eaZQuctYKX) and we'll handle the rest.
 
 - Spread the Word: Let your friends and classmates know about Spark – the more the merrier
 <hr>
