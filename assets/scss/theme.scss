@@ -1,5 +1,3 @@
-/*************************** Theme Colours****************************/
-// Define theme colour scheme
 $theme-color-primary: #28b76b;
 
 $theme-text-color-primary: #252930;
@@ -34,10 +32,6 @@ $theme-info-color: #5b99ea;
 $theme-danger-color: #d26d69;
 
 
-
-/*************************** Variables Section. *****************************/
-// Create variables to override the default value for variables used in the Bootstrap SCSS files.
-
 $gray-100: lighten($theme-text-color-secondary, 65%);
 $gray-200: lighten($theme-text-color-secondary, 55%);
 $gray-300: lighten($theme-text-color-secondary, 50%);
@@ -49,7 +43,6 @@ $gray-800: lighten($theme-text-color-secondary, 10%);
 $gray-900: $theme-text-color-primary;
 
 
-/* Override BS5 sass color */
 $primary: $theme-color-primary;
 $secondary: $theme-text-color-secondary;
 $success: $theme-success-color;
@@ -57,10 +50,9 @@ $danger: $theme-danger-color;
 $warning: $theme-warning-color;
 $info: $theme-info-color;
 
-/*************************** Import Bootstrap  *****************************/
+
 @import "bootstrap/scss/bootstrap.scss";
 
 
-/*************************** Theme Styles Section ****************************/
 @import "theme/styles.scss"
 
