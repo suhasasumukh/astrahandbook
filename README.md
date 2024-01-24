@@ -1,6 +1,6 @@
-<h1 align="center" id="title">Spark Handbook ⚡</h1>
+<h1 align="center" id="title">Spark Hack Handbook ⚡</h1>
 
-<p id="description">The ultimate guide for Young Builders to get started with building their first project for Hackathons.</p>
+<p id="description">This is our handbook crafted for aspiring builders to kickstart their first hackathon project with confidence.</p>
 <hr>
 
 <h2>⚒️ Handbook:</h2>
@@ -29,7 +29,7 @@ This project is licensed under the MIT
 
 <h2>Join Our Community:</h2>
 
-Join our friendly Discord community and show off what you're creating to fellow member. Get feedback from founders developers and designers. Take part in Spark Hacks and win exciting rewards. Let's build together!
+Join our friendly Discord community and show off what you're creating to fellow members. Get feedback from founders, developers, and designers. Take part in Spark Hack and win exciting rewards.
 
 - [Discord: Chat with young founders and devs](https://discord.com/invite/eaZQuctYKX)
 - [Follow us on Twitter (X)](https://twitter.com/_sparkhacks)
@@ -37,4 +37,4 @@ Join our friendly Discord community and show off what you're creating to fellow 
 
 ----
 
-<sub>Made with ❤️ by [Spark Hacks](https://sparkhack.org)</sub>
+<sub>Made with ❤️ by [Spark Hack](https://sparkhack.org)</sub>
