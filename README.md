@@ -5,7 +5,7 @@
 
 <h2>⚒️ Handbook:</h2>
 
-- [Access our Handbook here](sparkhandbook.vercel.app)
+- [Access our Handbook here](https://sparkhandbook.vercel.app/)
 <hr>
 
 <h2>🤝 Benefits</h2>
