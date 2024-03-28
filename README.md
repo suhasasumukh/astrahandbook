@@ -32,7 +32,7 @@ This project is licensed under the MIT
 Join our friendly Discord community and show off what you're creating to fellow members. Get feedback from founders, developers, and designers. Take part in Spark Hack and win exciting rewards.
 
 - [Discord: Chat with young founders and devs](https://discord.com/invite/eaZQuctYKX)
-- [Follow us on Twitter (X)](https://twitter.com/_sparkhacks)
+- [Follow us on Twitter (X)](https://twitter.com/sparkhackorg)
 - [Subscribe to our weekly newsletter](https://sparkcommmunity.substack.com)
 
 ----
