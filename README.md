@@ -5,7 +5,7 @@
 
 <h2>⚒️ Handbook:</h2>
 
-- [Access our Handbook here](sparkhandbook.vercel.app)
+- [Access our Handbook here](https://sparkhandbook.vercel.app/)
 <hr>
 
 <h2>🤝 Benefits</h2>
@@ -32,7 +32,7 @@ This project is licensed under the MIT
 Join our friendly Discord community and show off what you're creating to fellow members. Get feedback from founders, developers, and designers. Take part in Spark Hack and win exciting rewards.
 
 - [Discord: Chat with young founders and devs](https://discord.com/invite/eaZQuctYKX)
-- [Follow us on Twitter (X)](https://twitter.com/_sparkhacks)
+- [Follow us on Twitter (X)](https://twitter.com/sparkhackorg)
 - [Subscribe to our weekly newsletter](https://sparkcommmunity.substack.com)
 
 ----
